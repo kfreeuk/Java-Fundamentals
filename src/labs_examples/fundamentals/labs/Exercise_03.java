@@ -18,7 +18,7 @@ public class Exercise_03 {
 
         // write code to print out "Check out my first program!" below
         System.out.println("Check out my first program written using Intellij");
-        System.out.println("Here's another line of text.");
+        System.out.println("Here's another line of text that I've added to this file.");
 
     }
 
