@@ -1,22 +1,212 @@
 Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
-     1. Navigate to CodingNomads folder (or the space you have create for this project)
+     1. Navigate to CodingNomads folder (or the space you have created for this project)
+        root@Kate:~# cd /mnt/c/Users/Kate/Documents/CodingNomads/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep  9 15:10 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:10 ..
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 labs
+        drwxrwxrwx 1 root root 4096 Sep  9 15:10 projects
+        drwxrwxrwx 1 root root 4096 Sep  9 15:10 resources
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads# cd labs/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:10 ..
+        drwxrwxrwx 1 root root 4096 Sep 15 12:31 online-java-fundamentals
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs# cd online-java-fundamentals/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# ls -al
+        total 4
+        drwxrwxrwx 1 root root 4096 Sep 15 12:31 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+        drwxrwxrwx 1 root root 4096 Sep 15 11:51 .git
+        -rwxrwxrwx 1 root root   20 Sep  9 15:12 .gitignore
+        drwxrwxrwx 1 root root 4096 Sep 15 12:02 .idea
+        -rwxrwxrwx 1 root root 2234 Sep  9 16:22 README.md
+        -rwxrwxrwx 1 root root  433 Sep 10 14:00 online-java-fundamentals.iml
+        drwxrwxrwx 1 root root 4096 Sep 10 14:04 out
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 src
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# cd src
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 .
+        drwxrwxrwx 1 root root 4096 Sep 15 12:31 ..
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 labs_examples
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 mysql
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 videos_source_code
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src# cd labs_examples/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 arrays
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 conditions_loops
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 datastructures
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 datatypes_operators
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 enumerations
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 exception_handling
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 fundamentals
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 generics
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 inheritance
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 input_output
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 interfaces
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 lambdas
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 multi_threading
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 objects_classes_methods
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 packages
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 sorting_algorithms
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 static_nonstatic
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples# cd fundamentals/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 examples
+        drwxrwxrwx 1 root root 4096 Sep 13 14:46 labs
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals# cd labs/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs# ls -al
+        total 16
+        drwxrwxrwx 1 root root 4096 Sep 13 14:46 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+        -rwxrwxrwx 1 root root 1040 Sep  9 15:12 Exercise_01.txt
+        -rwxrwxrwx 1 root root 1684 Sep  9 15:12 Exercise_02.txt
+        -rwxrwxrwx 1 root root  637 Sep 13 14:46 Exercise_03.java
+        -rwxrwxrwx 1 root root  519 Sep  9 15:12 Exercise_04.java
+        -rwxrwxrwx 1 root root  794 Sep  9 15:12 Exercise_05.java
+
      2. Create new folder Terminal_testing
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs# mkdir Terminal_testing
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs# ls -al
+        total 16
+        drwxrwxrwx 1 root root 4096 Sep 15 12:37 .
+        drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+        -rwxrwxrwx 1 root root 1164 Sep 15 12:37 Exercise_01.txt
+        -rwxrwxrwx 1 root root 1684 Sep  9 15:12 Exercise_02.txt
+        -rwxrwxrwx 1 root root  637 Sep 13 14:46 Exercise_03.java
+        -rwxrwxrwx 1 root root  519 Sep  9 15:12 Exercise_04.java
+        -rwxrwxrwx 1 root root  794 Sep  9 15:12 Exercise_05.java
+        drwxrwxrwx 1 root root 4096 Sep 15 12:37 Terminal_testing
+
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
-         b. print the directory path
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# touch fileOne.txt fileTwo.txt fileThree.txt
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# ls -al
+         total 0
+         drwxrwxrwx 1 root root 4096 Sep 15 12:38 .
+         drwxrwxrwx 1 root root 4096 Sep 15 12:38 ..
+         -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileOne.txt
+         -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileThree.txt
+         -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileTwo.txt
+
+         b. print the directory
+         /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing
+
          c. list the contents of the folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 15 12:38 .
+        drwxrwxrwx 1 root root 4096 Sep 15 12:38 ..
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileOne.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileThree.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileTwo.txt
+
      5. Inside of folder Terminal_testing, create a new folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# mkdir new_Folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 15 14:45 .
+        drwxrwxrwx 1 root root 4096 Sep 15 14:44 ..
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileOne.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileThree.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileTwo.txt
+        drwxrwxrwx 1 root root 4096 Sep 15 14:45 new_Folder
+
      6. Copy a file from Terminal_testing to the new folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# cp fileOne.txt new_Folder/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# cd new_Folder/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing/new_Folder# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 15 15:41 .
+        drwxrwxrwx 1 root root 4096 Sep 15 15:41 ..
+        -rwxrwxrwx 1 root root    0 Sep 15 15:30 fileOne.txt
+
      7. Move a different file from Terminal_testing to the new folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# touch fileFour.txt
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# mv fileFour.txt /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing/new_Folder/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 15 15:41 .
+        drwxrwxrwx 1 root root 4096 Sep 15 15:31 ..
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileOne.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileThree.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileTwo.txt
+        drwxrwxrwx 1 root root 4096 Sep 15 15:41 new_Folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# cd new_Folder/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing/new_Folder# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 15 15:41 .
+        drwxrwxrwx 1 root root 4096 Sep 15 15:41 ..
+        -rwxrwxrwx 1 root root    0 Sep 15 15:31 fileFour.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 15:30 fileOne.txt
+
      8. Demonstrate removing:
          a. A file
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing/new_Folder# rm fileFour.txt
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing/new_Folder# ls -al
+         total 0
+         drwxrwxrwx 1 root root 4096 Sep 15 15:43 .
+         drwxrwxrwx 1 root root 4096 Sep 15 15:41 ..
+         -rwxrwxrwx 1 root root    0 Sep 15 15:30 fileOne.txt
+
          b. A folder
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# rm -r new_Folder/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 15 15:56 .
+        drwxrwxrwx 1 root root 4096 Sep 15 15:55 ..
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileOne.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileThree.txt
+        -rwxrwxrwx 1 root root    0 Sep 15 12:38 fileTwo.txt
+
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# vim fileOne.txt
+
          b. Use $ cat print contents of file
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# cat fileOne.txt
+         Test content.
+
+         One
+
+         Two
+
+         Three
+
+         Four
+
+         Five
+
          c. Use $ grep to search for a word inside file
+         root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/fundamentals/labs/Terminal_testing# grep "Three" fileOne.txt
+         Three
 
 Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd

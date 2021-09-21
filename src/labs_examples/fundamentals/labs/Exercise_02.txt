@@ -4,16 +4,94 @@
 
 Initializing git folder
     1. In CodingNomads folder, create new folder git_practice
+       root@Kate:~# cd /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/
+       root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# pwd
+       /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals
+       root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# ls -al
+       total 4
+       drwxrwxrwx 1 root root 4096 Sep 15 12:31 .
+       drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+       drwxrwxrwx 1 root root 4096 Sep 15 11:51 .git
+       -rwxrwxrwx 1 root root   20 Sep  9 15:12 .gitignore
+       drwxrwxrwx 1 root root 4096 Sep 15 12:39 .idea
+       -rwxrwxrwx 1 root root 2234 Sep  9 16:22 README.md
+       -rwxrwxrwx 1 root root  433 Sep 10 14:00 online-java-fundamentals.iml
+       drwxrwxrwx 1 root root 4096 Sep 10 14:04 out
+       drwxrwxrwx 1 root root 4096 Sep  9 15:12 src
+       root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# mkdir git_practice
+       root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# pwd
+       /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals
+       root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# ls -al
+       total 4
+       drwxrwxrwx 1 root root 4096 Sep 16 14:27 .
+       drwxrwxrwx 1 root root 4096 Sep  9 15:12 ..
+       drwxrwxrwx 1 root root 4096 Sep 15 11:51 .git
+       -rwxrwxrwx 1 root root   20 Sep  9 15:12 .gitignore
+       drwxrwxrwx 1 root root 4096 Sep 15 12:39 .idea
+       -rwxrwxrwx 1 root root 2234 Sep  9 16:22 README.md
+       drwxrwxrwx 1 root root 4096 Sep 16 14:27 git_practice
+       -rwxrwxrwx 1 root root  433 Sep 10 14:00 online-java-fundamentals.iml
+       drwxrwxrwx 1 root root 4096 Sep 10 14:04 out
+       drwxrwxrwx 1 root root 4096 Sep  9 15:12 src
+
     2. Inside git_practice:
         a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
             the "git init" command within the git_practice folder.
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# cd git_practice/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# pwd
+        /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 16 14:27 .
+        drwxrwxrwx 1 root root 4096 Sep 16 14:27 ..
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git init
+        Initialized empty Git repository in /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice/.git/
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice#
+
         b. Make new file
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# touch new_File.txt
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# ls -al
+        total 0
+        drwxrwxrwx 1 root root 4096 Sep 16 14:46 .
+        drwxrwxrwx 1 root root 4096 Sep 16 14:27 ..
+        drwxrwxrwx 1 root root 4096 Sep 16 14:28 .git
+        -rwxrwxrwx 1 root root    0 Sep 16 14:46 new_File.txt
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# vim new_File.txt
+
         c. Add file
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git add new_File.txt
+        warning: LF will be replaced by CRLF in new_File.txt.
+        The file will have its original line endings in your working directory
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git config core.autocrlf true
+
         d. Commit file
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git commit -m "added file to git_practice repo"
+        [master (root-commit) 13d7b8e] added file to git_practice repo
+         1 file changed, 5 insertions(+)
+         create mode 100644 new_File.txt
+
         c. On Github, create new git_practice repository
+
         d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
             git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+            root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git remote add kate https://github.com/kfreeuk/git_practice.git
+
         d. Push commit file to Github
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git remote -v
+        kate    https://github.com/kfreeuk/git_practice.git (fetch)
+        kate    https://github.com/kfreeuk/git_practice.git (push)
+        root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/git_practice# git push kate master
+        Username for 'https://github.com': kfreeuk
+        Password for 'https://kfreeuk@github.com':
+        Enumerating objects: 3, done.
+        Counting objects: 100% (3/3), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (2/2), done.
+        Writing objects: 100% (3/3), 291 bytes | 3.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To https://github.com/kfreeuk/git_practice.git
+         * [new branch]      master -> master
+
         e. Practice the following git flow until you feel comfortable:
             i.   Create or modify file
             ii.  Add file(s)
@@ -22,13 +100,93 @@ Initializing git folder
 
 Adding a remote
     1. Create new personal repository on Github named "git_practice_2".
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# git remote add kate2 https://github.com/kfreeuk/git_practice_2.git
+
     2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
         (directions are provided on Github with new repo is created)
+
+
     3. Push local git repository to your Github using the new remote.
+
 
 Cloning repository from Github
     1. Find a repository on Github
+    https://github.com/selenide-examples/google
+
     2. Clone repository to local machine
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# mkdir My_Amazing_Cloned_Project
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals# cd My_Amazing_Cloned_Project/
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git clone https://github.com/selenide-examples/google.git
+    Cloning into 'google'...
+    remote: Enumerating objects: 630, done.
+    remote: Counting objects: 100% (158/158), done.
+    remote: Compressing objects: 100% (88/88), done.
+    remote: Total 630 (delta 80), reused 120 (delta 50), pack-reused 472
+    Receiving objects: 100% (630/630), 437.61 KiB | 4.05 MiB/s, done.
+    Resolving deltas: 100% (303/303), done.
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# ls -al
+    total 0
+    drwxrwxrwx 1 root root 4096 Sep 21 15:27 .
+    drwxrwxrwx 1 root root 4096 Sep 21 15:27 ..
+    drwxrwxrwx 1 root root 4096 Sep 21 15:27 google
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git init
+    Initialized empty Git repository in /mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project/.git/
+
     3. Create new repository on Github
+    https://github.com/kfreeuk/Another_Cloned_Project
+
     4. Add new remote on local machine
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git remote add KateClonePractice https://github.com/kfreeuk/Another_Cloned_Project.git
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git remote -v
+    KateClonePractice       https://github.com/kfreeuk/Another_Cloned_Project.git (fetch)
+    KateClonePractice       https://github.com/kfreeuk/Another_Cloned_Project.git (push)
+
     5. Push to new Github repository
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git status
+    On branch master
+
+    No commits yet
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            google/
+
+    nothing added to commit but untracked files present (use "git add" to track)
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git add google/*
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git commit -m "adding content to remote repo"
+    [master (root-commit) edbc558] adding content to remote repo
+     22 files changed, 927 insertions(+)
+     create mode 100644 google/LICENSE
+     create mode 100644 google/README.md
+     create mode 100644 google/build.gradle
+     create mode 100644 google/google.iml
+     create mode 100644 google/gradle/wrapper/gradle-wrapper.jar
+     create mode 100644 google/gradle/wrapper/gradle-wrapper.properties
+     create mode 100644 google/gradlew
+     create mode 100644 google/gradlew.bat
+     create mode 100644 google/pom.xml
+     create mode 100644 google/test/org/selenide/examples/google/classic_page_object/GooglePage.java
+     create mode 100644 google/test/org/selenide/examples/google/classic_page_object/GoogleTest.java
+     create mode 100644 google/test/org/selenide/examples/google/classic_page_object/SearchResultsPage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object/GooglePage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object/GoogleTest.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object/SearchResultsPage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object_with_assertions/GooglePage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object_with_assertions/GoogleTest.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object_with_assertions/SearchResultsPage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object_with_fields/GooglePage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object_with_fields/GoogleTest.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_page_object_with_fields/SearchResultsPage.java
+     create mode 100644 google/test/org/selenide/examples/google/selenide_straightforward/GoogleTest.java
+    root@Kate:/mnt/c/Users/Kate/Documents/CodingNomads/labs/online-java-fundamentals/My_Amazing_Cloned_Project# git push KateClonePractice master
+    Username for 'https://github.com': kfreeuk
+    Password for 'https://kfreeuk@github.com':
+    Enumerating objects: 37, done.
+    Counting objects: 100% (37/37), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (30/30), done.
+    Writing objects: 100% (37/37), 64.45 KiB | 181.00 KiB/s, done.
+    Total 37 (delta 7), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (7/7), done.
+    To https://github.com/kfreeuk/Another_Cloned_Project.git
+     * [new branch]      master -> master

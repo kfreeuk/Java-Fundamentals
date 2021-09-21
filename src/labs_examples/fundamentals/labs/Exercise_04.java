@@ -17,6 +17,27 @@ public class Exercise_04 {
 
         // write your code below
 
+        boolean isNumber = false;
+        System.out.println(isNumber);
+
+        char letter = 'k';
+        System.out.println(letter);
+
+        byte byteNumber = 16;
+        System.out.println(byteNumber);
+
+        int intNumber = 54000087;
+        System.out.println(intNumber);
+
+        long longNumber = 321567893422227899l;
+        System.out.println(longNumber);
+
+        float floatNumber = 78787878.003333f;
+        System.out.println(floatNumber);
+
+        double doubleNumber = 2221113334455588999000.321;
+        System.out.println(doubleNumber);
+
     }
 
 }
