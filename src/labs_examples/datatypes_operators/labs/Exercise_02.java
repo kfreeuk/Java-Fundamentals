@@ -24,6 +24,13 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        int k = 10;
+        double l = k;
+        System.out.println(k);
 
+        double m = 10.5;
+        int n = (int) m;
+        System.out.println(n);
+        //   The int value is less accurate than the double value i.e. info is lost as the data type gets narrower
     }
 }

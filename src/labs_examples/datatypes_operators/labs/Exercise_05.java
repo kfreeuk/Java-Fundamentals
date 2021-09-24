@@ -18,7 +18,21 @@ class LogicalOperators {
         }
 
         // write your code below
-
+        if (a & b){
+            System.out.println("this is false as a is true and b is false");
+        }
+        if (a && b){
+            System.out.println("this is false as a is true but b is false");
+        }
+        if (a || b){
+            System.out.println("this is true as only a or b is true");
+        }
+        if (a ^ b){
+            System.out.println("this is true as either a or b can be true but not at the same time");
+        }
+        if (!a == b){
+            System.out.println("this is true as a does not equal b");
+        }
     }
 
 }
