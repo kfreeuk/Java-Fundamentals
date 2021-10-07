@@ -1,5 +1,6 @@
 package labs_examples.conditions_loops.labs;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -24,6 +25,16 @@ public class Exercise_01 {
         int number = scanner.nextInt();
 
         // write completed code here
-
+        if (number > 0 && number < 1000000) {
+            if (number % 2 == 0) {
+                System.out.println(number + " is an even number");
+            }
+            if (number % 2 != 0) {
+                System.out.println(number + " is an odd number");
+            }
+        }
+        if (number < 0 | number > 1000000) {
+            System.out.println(number + " is not in the permitted range");
+        }
     }
 }

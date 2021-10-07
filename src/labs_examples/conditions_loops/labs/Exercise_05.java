@@ -1,5 +1,9 @@
 package labs_examples.conditions_loops.labs;
 
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +20,31 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
-}
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter a number between 1 and 100: ");
+        int numberOne = scanner.nextInt();
+
+        System.out.println("Please enter another number between 1 and 100 that is larger than the previous number: ");
+        int numberTwo = scanner.nextInt();
+
+        int sumOfNumbers = 0;
+        double loopCount = numberTwo;
+
+
+        for(int i = 1; i <= numberTwo; i++) {
+            if(i > numberTwo) {
+                break;
+            }
+            sumOfNumbers = sumOfNumbers + i;
+        }
+        double average = sumOfNumbers / loopCount;
+
+        System.out.println("The sum is: " + sumOfNumbers);
+        System.out.println("The average is: " + average);
+
+        }
+    }
+

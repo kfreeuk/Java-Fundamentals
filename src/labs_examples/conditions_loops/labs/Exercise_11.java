@@ -22,5 +22,14 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
 
+        int maxRows = 10;
+        for (int i = 1; i <= maxRows; i++) {
+            for (int j = 1; j <= maxRows; j++) {
+                System.out.print(i * j + " |");
+            }
+            System.out.println();
+        }
+    }
 }
