@@ -1,4 +1,5 @@
 package labs_examples.arrays.labs;
+import java.util.Arrays;
 
 /**
  *  Irregular Arrays
@@ -9,5 +10,19 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main(String[] args) {
+
+        String [] [] irregArray = {
+                {"apple", "pear"},
+                {"peach", "mango", "melon"},
+                {"avocado", "tomato", "kumquat"}
+        };
+        for(String [] outer : irregArray) {
+            for(String fruit : outer) {
+                System.out.print(fruit + ", ");
+            }
+            System.out.println();
+        }
+    }
 
 }

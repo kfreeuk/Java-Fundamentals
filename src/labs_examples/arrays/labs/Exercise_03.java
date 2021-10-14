@@ -14,10 +14,25 @@ package labs_examples.arrays.labs;
  *      ...
  *
  */
+import java.util.Arrays;
 
 public class Exercise_03 {
 
     public static void main(String[] args) {
-        
+
+        int[][] threeTimesTable = new int[5][5];
+        int multiples = 1;
+
+        for (int i = 0; i < threeTimesTable.length; i++) {
+            for (int x = 0; x < threeTimesTable[i].length; x++) {
+                threeTimesTable[i][x] = multiples * 3;
+                multiples++;
+                System.out.print(threeTimesTable[i][x] + " ");
+            }
+            System.out.println();
+        }
+        }
     }
-}
+
+
+
