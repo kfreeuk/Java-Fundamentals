@@ -23,6 +23,7 @@ import labs_examples.packages.labs.two.Hours;
         int exampleAddition = testMultiply.addition(4, 5, 6);
         System.out.println(exampleAddition);
 
+
         /*After importing package two, create new Hours object*/
         Hours obj = new Hours();
         double payRate = obj.pay(12.75, 5);

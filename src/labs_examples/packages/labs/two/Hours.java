@@ -7,9 +7,10 @@ public class Hours {
        return ratePerHour * shiftLength;
    }
 
-   protected void isDoubleTime(){
+   protected void isDoubleTime() {
        boolean isDoubleTime;
-       if (isDoubleTime = true); {
+       if (isDoubleTime = true) ;
+       {
            System.out.println("This shift pays double rate");
        }
    }
